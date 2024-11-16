@@ -2,8 +2,123 @@
 /*Every element must be styled.*/
 /*Create style rules using class, id, and element selectors.*/
 
+/*Begin the element selectors here.*/
 /*This targets the body element of the all the pages, coloring the background something more appealing.*/
 body {
-    background-color: rgb(215, 215, 180);
+    background-color: rgb(32, 50, 47);
+    margin: 0;
 }
 
+h1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-size: 100px;
+    max-width: 100%;
+    background-color: rgb(246, 244, 232);
+    border-width: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    background-color: rgb(246, 244, 232);
+    border-width: 0px;
+    margin: 0;
+    padding: 25px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(246, 244, 232);
+}
+
+button {
+    padding: 0;
+    font-size: 100px;
+}
+
+a {
+    font-size: 50px;
+    color: rgb(191, 202, 117);
+}
+
+/*Using a block element to allow the image to be morphed in the specific way I want to, particularly so it can be centered no matter what.*/
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    background-color: rgb(150, 150, 125);
+    padding: 25px;
+    border-style: none;
+    margin: 0;
+    text-align: center;
+    font-size: large;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    background-color: rgb(150, 150, 125);
+}
+
+figcaption {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    margin: 0;
+}
+
+footer {
+    background-color: rgb(248, 248, 187);
+}
+
+/*Begin the id selectors here*/
+#about-image {
+    height: 484px;
+}
+
+#contact-image {
+    height: 484px;
+}
+
+/*Begin the class selectors here*/
+
+.font-color {
+    color: rgb(82, 139, 98)
+}
+
+.font-color2 {
+    color: rgb(191, 202, 117)
+}
+
+.footer-layout {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    height: 150px;
+    gap: 0px;
+    padding: 0px;
+}
+
+.item3 {
+    grid-column: 1 / span 2;
+}
+
+.item4 {
+    grid-column: 1 / span 2;
+}
