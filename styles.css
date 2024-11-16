@@ -1,3 +1,9 @@
 /*Use only external CSS file (no internal or inline styling)*/
 /*Every element must be styled.*/
-/*Create style rules using class, id, and element selectors./
+/*Create style rules using class, id, and element selectors.*/
+
+/*This targets the body element of the all the pages, coloring the background something more appealing.*/
+body {
+    background-color: rgb(215, 215, 180);
+}
+
