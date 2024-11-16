@@ -2,16 +2,16 @@
 /*Every element must be styled.*/
 /*Create style rules using class, id, and element selectors.*/
 
-/*Begin the element selectors here.*/
-/*This targets the body element of the all the pages, coloring the background something more appealing.*/
+/*---------Begin the element selectors here.--------------------*/
+
+/*This targets the body element of the all the pages, coloring the background something more appealing*/
 body {
     background-color: rgb(32, 50, 47);
-    margin: 0;
 }
 
+/*This targets the h1, making sure the heading of the home page looks presentable without weird breaking between it and the navigation while also centering all of the text.*/
 h1 {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: center;
     font-size: 100px;
     max-width: 100%;
@@ -21,6 +21,8 @@ h1 {
     margin-bottom: 0;
 }
 
+/*This targets the h2 on all pages, just like the h1 this makes it way more presentable without weird breaking between it and the navigation while also centering all of the text.*/
+/*Not only that, it serves as a break between paragraphs as well, clearly labeling where the next section begins through color and the padding width*/
 h2 {
     display: flex;
     justify-content: center;
@@ -31,6 +33,7 @@ h2 {
     padding: 25px;
 }
 
+/*This alters the navigation by setting the links evenly spaced across the middle of the page right after h1.*/
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -40,17 +43,13 @@ nav {
     background-color: rgb(246, 244, 232);
 }
 
-button {
-    padding: 0;
-    font-size: 100px;
-}
-
+/*This changes the colors of the link text itself for all links*/
 a {
     font-size: 50px;
     color: rgb(191, 202, 117);
 }
 
-/*Using a block element to allow the image to be morphed in the specific way I want to, particularly so it can be centered no matter what.*/
+/*Using a block element to allow the image to be morphed in the specific way I want to, particularly so it can be centered no matter what on all pages.*/
 img {
     display: block;
     margin: auto;
@@ -58,6 +57,7 @@ img {
     height: auto;
 }
 
+/*This changes the background color and font size for all paragraph areas*/
 p {
     background-color: rgb(150, 150, 125);
     padding: 25px;
@@ -67,6 +67,7 @@ p {
     font-size: large;
 }
 
+/*This changes the background color and centers all the items in the table in the contact page*/
 table {
     display: flex;
     justify-content: center;
@@ -74,39 +75,48 @@ table {
     background-color: rgb(150, 150, 125);
 }
 
+/*Centers the figcaption in the home page to line up under the image*/
 figcaption {
     display: flex;
     justify-content: center;
 }
 
+/*Simple deletion of the margin to make the page look nicer*/
 hr {
     margin: 0;
 }
 
+/*Changes background color of the footer section*/
 footer {
     background-color: rgb(248, 248, 187);
 }
 
-/*Begin the id selectors here*/
+/*---------Begin the id selectors here------------*/
+
+/*Changes the height of the image in the about header to match the height of the home header image.*/
 #about-image {
     height: 484px;
 }
 
+/*Changes the height of the image in the about header to match the height of the home header image.*/
 #contact-image {
     height: 484px;
 }
 
-/*Begin the class selectors here*/
+/*----------Begin the class selectors here-------------*/
 
+/*Changes the font color for the headers to be darker*/
 .font-color {
     color: rgb(82, 139, 98)
 }
 
+/*Changes the font color for the content to be brighter*/
 .font-color2 {
     color: rgb(191, 202, 117)
 }
 
-.footer-layout {
+/*Changes the layout of the form in the footer section into a grid layout, also increases the size of the inputs themselves*/
+.form-layout {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
@@ -115,10 +125,12 @@ footer {
     padding: 0px;
 }
 
+/*Shifts the email grid to take up more space*/
 .item3 {
     grid-column: 1 / span 2;
 }
 
+/*Shifts the submit button to take up more space*/
 .item4 {
     grid-column: 1 / span 2;
 }

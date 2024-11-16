@@ -10,9 +10,11 @@
     <header>
 
         <!--This image goes above the navigation-->
+        <!--Additional id identification uses the 'about-image' external CSS-->
         <img id="about-image" src="images/reaction.png" alt="Eric as a confused deer">
 
         <!--The navigation for the Home, About, and Contact pages-->
+        <!--Additional class identification uses the 'font-color' external CSS-->
         <nav class="font-color">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
@@ -36,7 +38,8 @@
         <footer>
             <h2 class="font-color">Show your support by signing up to our free newsletter!</h2>
 
-            <form class="footer-layout">
+            <!--The class uses the 'footer-layout' grid alongside the subsequent 'item1-4' for all pages so that the form layout looks a lot nicer-->
+            <form class="form-layout">
                 <input class="item1" type="text" name="firstName" placeholder="First Name">
                 <input class="item2" type="text" name="lastName" placeholder="Last Name">
                 <input class="item3" type="text" name="email" placeholder="Email Address">
